@@ -13,10 +13,12 @@ Constarint Layout memungkinkan kita membuat tata letak yang besar dan kompleks d
 - Linear Layout: mengikuti ukuran layer handphone yang berbeda-beda tanpa merubah susunan objek
 - Relative Layout: hanya akan terlihat sesuai dengan apa yang telah ditetapkan sebelumnya jika ukuran layar berubah bisa saja objek ada yang terpotong atau bahkan tidak terlihat
 - Constraint Layout: lebih flexible dan mudah bagi pengguna untuk membuat desain layout yang lebih kompleks
-
-# onCreate
+# Android Activity 
+Activity adalah komponen pada aplikasi Android yang menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi, seperti membuat panggilan telepon, mengambil foto, mengirim pesan singkat, atau mengirim email. Sebuah Activity mengatur satu halaman user interface aplikasi. Sehingga jika sebuah aplikasi Android memiliki beberapa halaman user interface yang saling berinteraksi, berarti aplikasi tersebut memiliki beberapa Activity yang saling berinteraksi.
+Beberapa contoh dan penjelasan metode pada satu activity, yaitu:
+## 1.onCreate
 onCreate() adalah kondisi awal saat Activity baru diciptakan, biasanya dilakukan untuk menginisialisasi suatu activity. onCreate dipanggil dengan perintah setContentView(int) untuk resource yang didefinisikan di layout UI, dengan perintah findViewById(int) untuk memanggil widget yang dibutuhkan UI untuk berinteraksi dengan aplikasi. Ketika sebuah activity dibuat, pada method inilah kita melakukan inisialisasi seperti create, view, list data, dan lain-lain. Method onCreate() selalu diikuti oleh onStart().
-# onPause
+## 2.onPause
 onPause untuk menyatakan ketika user meninggalkan suatu activity. onPause() akan dipanggil saat ada Activity lain yang terbuka. Untuk penggunaannya dengan Context.StartActivity(), semua kelas activity harus sesuai dengan dideklarasikan dalam suatu paket di AndroidManisfest.xml. Ketika sebuah activity lainnya dipanggil atau dimulai, method ini digunakan ketika data tidak harus disimpan kedalam system secara permanen, method ini diikuti onResume() atau onStop(). Activity sudah akan bersiap-siap meninggalkan layar (masih terlihat) dan sudah tidak berinteraksi dengan pengguna. Biasanya bila perlu melakukan undo untuk pekerjaan yang dilakukan di onResume() kita lakukan di sini.
 
 
