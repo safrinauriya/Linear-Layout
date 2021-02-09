@@ -3,3 +3,5 @@ LinearLayout merupakan susunan tata letak yang paling sederhana dapat digunakan 
 -	Linear Layout Vertical (Objek per baris/ kesamping)
 -	Linear Layout Horizontal (Objek per kolom/kebawah)
 
+![image](https://user-images.githubusercontent.com/60589670/107394908-ecc60480-6b2e-11eb-9658-73f4ac3c3969.png)
+
